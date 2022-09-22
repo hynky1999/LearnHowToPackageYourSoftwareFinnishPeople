@@ -7,7 +7,7 @@ from tempfile import mkstemp
 from flask_socketio import emit
 from sqlalchemy import and_
 from flask_login import login_required
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
 from flask import (
     render_template,
     request,

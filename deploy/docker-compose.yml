@@ -11,7 +11,7 @@ services:
     volumes:
       #- ./tls:/etc/nginx/tls
       #- ./config/nginx/rating.conf:/etc/nginx/conf.d/rating.conf
-      - ./log/nginx:/var/log/nginx
+      - ./log/nginx:/var/log/nginx:Z
     depends_on:
       - gunicorn
 
@@ -37,7 +37,7 @@ services:
       MYSQL_USER: rating
       MYSQL_PASSWORD: rating_passwd
     volumes:
-      - ./config/mysql/rating.cnf:/etc/mysql/conf.d/rating.cnf
-      - ./config/mysql/schema.sql:/docker-entrypoint-initdb.d/1.sql
-      - ./config/mysql/data.sql:/docker-entrypoint-initdb.d/2.sql
-      - ./dbdata:/var/lib/mysql
+      - ./config/mysql/rating.cnf:/etc/mysql/conf.d/rating.cnf:Z
+      - ./config/mysql/schema.sql:/docker-entrypoint-initdb.d/1.sql:Z
+      - ./config/mysql/data.sql:/docker-entrypoint-initdb.d/2.sql:Z
+      - ./dbdata:/var/lib/mysql:Z

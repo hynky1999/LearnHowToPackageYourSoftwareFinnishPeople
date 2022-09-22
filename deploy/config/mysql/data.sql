@@ -1,6 +1,6 @@
 
 /* password:password */
-INSERT INTO user VALUES(1,'admin',NULL,'pbkdf2:sha256:50000$6Cc6Mjmo$3fe413a88db1bacfc4d617f7c1547bd1ea4cbd6c5d675a58e78332201f6befc6');
+INSERT INTO user VALUES(1,'admin',NULL,'pbkdf2:sha256:260000$IAepHfrFLnQhGfAx$0b737b12b2f5f1a68b3814277544c9e581c4d81232a77a81d19b53a736fc3e5f');
 
 /* password:password */
 INSERT INTO user VALUES(2,'editor',NULL,'pbkdf2:sha256:50000$Rq2WwVVi$12335e8d02fa3f25ffd11ba9f02fd1db7ca2964c5eaa13ca179a02ee3f19a656');
