@@ -28,7 +28,7 @@ Jinja2==3.0.3
 kiwisolver==1.4.4
 Mako==1.2.2
 MarkupSafe==2.1.1
-matplotlib==3.6.0
+matplotlib==3.5.0
 mysql-connector-python==8.0.30
 networkx==2.8.6
 numpy==1.23.3
