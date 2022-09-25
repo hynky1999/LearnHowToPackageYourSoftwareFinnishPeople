@@ -6,15 +6,16 @@ COPY requirements.txt /srv/app
 
 RUN apt-get update && \
     apt-get install -y \
-        build-essential \
-        make \
-        gcc \
-        pkg-config
-        
-#ython3-matplotlib
+    build-essential \
+    make \
+    gcc \
+    pkg-config
+
+#python3-matplotlib
 
 
-RUN pip install --upgrade pip -r requirements.txt
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
 
 COPY app/. /srv/app/app
 COPY run.py /srv/app
